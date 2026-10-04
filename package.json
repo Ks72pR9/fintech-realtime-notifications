@@ -1,0 +1,12 @@
+{
+  "name": "fintech-realtime-notifications",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import=tsx test/notification-policy.test.ts",
+    "start": "node --import=tsx src/notification_service.ts"
+  },
+  "dependencies": { "tsx": "^4.19.2", "zod": "^3.23.8" },
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.6.3" }
+}
